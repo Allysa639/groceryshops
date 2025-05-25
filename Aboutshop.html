@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="text-align: center;">
+<title> About us</title>
+
+<h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    WELCOME TO MY GROCERY SHOP!!
+</h1>
+<body style="background-color: #96dce9;">
+<h2>
+ <img src="shop.jpg" style="height: 400px" width="700px">
+<br>My Grocery Shop is a shop that sell grocery items through online platform.<br> 
+Users can save their time to shop their daily essential by using our website.<br>
+We provided various kind of product that everyone need in their daily basis.
+</h2><br>
+
+<h3><strong>This shop also allow the user to give donation for people who needed</strong></h3>
+
+<p id="demo"></p>
+<script>
+        const about = {
+            Businesstype: "Partnership",
+            Owner: "Allysa and Daniela",
+            Started: "22 May 2025",
+            Location: "Lot 568, Bandar Arau",
+            getInfo: function () {
+                return this.Businesstype + " " + this.Started; 
+            }
+        };
+        let msg;
+        msg = '<br> Business type: ' + about.Businesstype + 
+                '<br> Owner: ' + about.Owner +
+                '<br> Started: ' + about.Started +
+                '<br> Location:' + about.Location;
+        
+        document.getElementById("demo").innerHTML = msg;
+    </script> 
+         <audio controls>
+  <source src="Aventure - A Beautiful Garden (freetouse.com).mp3" type="audio/ogg">
+  <source src="Aventure - A Beautiful Garden (freetouse.com).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+        </body>
+</html>

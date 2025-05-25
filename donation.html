@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <title>Donation</title>
+    <style>
+        #totals {
+            display: none;
+            border: 2px solid black;
+            padding: 10px;
+            width: 500px;
+        }
+    </style>
+<body style="background-color: #96dce9;">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Donation</h1>
+    <h2>Give support to others for a better life. Everyone deserve to live happily.</h2>
+
+    <p id="demo"></p>
+<script>
+        const donation ={
+            code1: "RM30 (Raw chicken, Rice and Spices)",
+            code2: "RM50 (Raw chicken, Rice, Spices and Sauces)",
+            code3: "RM60 (Raw chicken, Rice, Cooking oil)",
+            code4: "RM80 (Raw chicken, Rice, Cooking oil, Sauces and Spices)",
+            code5: "RM100 (Raw chicken, Rice, Cooking oil, Flour, Sauces and Spices)",
+            getInfo: function () {
+                return;
+            }
+        };
+        let msg;
+        msg =   '<br><strong> The donation package offer: </strong>' + 
+                '<br> Package 1:' + donation.code1 +
+                '<br> Package 2: ' + donation.code2 +
+                '<br> Package 3:' + donation.code3 +
+                '<br> Package 4: ' + donation.code4 +
+                '<br> Package 5:' + donation.code5;
+        
+        document.getElementById("demo").innerHTML = msg;
+    </script>      
+
+ <img src="donation.jpg" style="height: 350px">
+
+    <br><br>Package (1–5): <input type="text" id="package" style="text-align: center;"><br><br>
+    Amount: <input type="text" id="quantity" style="text-align: center;"><br><br>
+    <button onclick="processResult()">Donate to others</button><br><br>
+
+    <div id="totals">
+        <h1>Total amount</h1>
+        Total amount: <b class="total" id="totalamount"></b>
+    </div>
+
+    <script>
+        function processResult() {
+            let packageValue = parseInt(document.getElementById("package").value);
+            let quantityValue = parseInt(document.getElementById("quantity").value);
+
+            if (isNaN(packageValue) || isNaN(quantityValue) || quantityValue <= 0) {
+                alert("Please enter valid values for package and amount!");
+                return;
+            }
+
+            let price;
+            switch (packageValue) {
+                case 1:
+                    price = 30;
+                    break;
+                case 2:
+                    price = 50;
+                    break;
+                case 3:
+                    price = 60;
+                    break;
+                case 4:
+                    price = 80;
+                    break;
+                default:
+                    price = 100;
+                    break;
+                
+            }
+
+            let totalAmount = price * quantityValue;
+            document.getElementById("totalamount").textContent = totalAmount;
+            document.getElementById("totals").style.display = "block";
+        }
+    </script>
+     <a href="https://bimb.com/bimb-web/">Make Payment!</a>
+
+
+</body>
+</html>

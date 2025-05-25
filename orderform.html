@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>Order form</title>
+<link rel="stylesheet" href="style.css">
+<h1 style="text-align: center;font-family: 'Courier New', Courier, monospace;">Online Grocery Shopping (Order Form)</h1><br><br>
+  
+<form style="height: fit-content;text-align: left ;">
+  <img src="cart.png" style="text-align: center;">
+  <form action="process.php" method="post">
+  <p>Fill the given form to make order</p>
+    Name:<br>
+    <input type="text" name="firstname" size="70" width="30"><br>
+    Telephone number:<br>
+    <input type="text" name="telephone" size="70"><br>
+    Address:<br>
+    <input type="text" name="address" size="70"><br>
+    Street:<br>
+    <input type="text" name="street" size="70"><br>
+    Postal code: <br>
+    <input type="text" name="postcode" size="30"><br>
+    City:<br>
+    <input type="text" name="city" size="50"><br>
+    State: <br>
+    <input type="text" name="state" size="60"><br>
+    Item order: <br>
+    <input type="checkbox" name="veg" value="veg"> Vegetables<br>
+    <input type="checkbox" name="chicken" value="chicken"> Raw Chicken<br>
+    <input type="checkbox" name="sauces" value="sauses"> Sauces <br>
+    <input type="checkbox" name="fruit" value="fruit"> Fruits<br>
+    <input type="checkbox" name="spice" value="spice"> Spices <br><br>
+    <button type="button" onclick="alert('Thank you for your order')">Order Now</button>
+  </form>
+  <a href="https://bimb.com/bimb-web/">Make Payment!</a>
+
+</body>
+ 
+</html>

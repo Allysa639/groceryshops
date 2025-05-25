@@ -1,0 +1,56 @@
+body{
+    background-attachment: fixed;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: #96dce9;
+
+    text-align: center;
+    text-decoration: wavy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-style: normal;
+
+}
+h2{text-align: center;}
+nav a {
+  color: rgb(20, 3, 3);
+  margin: 0 15px;
+  text-decoration: silver;
+}
+
+.banner {
+  background-color: #18306c;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #18306c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
